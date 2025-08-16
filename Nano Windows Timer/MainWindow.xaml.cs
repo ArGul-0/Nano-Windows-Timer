@@ -20,5 +20,15 @@ namespace Nano_Windows_Timer
         {
             InitializeComponent();
         }
+
+        private void StartOrPauseButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TimerTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
