@@ -39,5 +39,6 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBox x:Name="TimerTextBox" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="0:00:00" VerticalAlignment="Top" Width="168" Background="{x:Null}" BorderBrush="{x:Null}" Height="45" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextAlignment="Center" FontWeight="Bold" MaxLines="1" CharacterCasing="Lower" Foreground="#FFC8C8C8" TextChanged="TimerTextBox_TextChanged"/>
+        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Center" Margin="0,72,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Window>
