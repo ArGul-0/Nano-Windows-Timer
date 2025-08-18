@@ -21,5 +21,20 @@ namespace Nano_Windows_Timer
         {
 
         }
+
+        private void SecondsTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            PartOfTimer partOfTimer = new PartOfTimer(PartOfTimer.TimerPart.Seconds);
+        }
+
+        private void MinutesTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            PartOfTimer partOfTimer = new PartOfTimer(PartOfTimer.TimerPart.Minutes);
+        }
+
+        private void HoursTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            PartOfTimer partOfTimer = new PartOfTimer(PartOfTimer.TimerPart.Hours);
+        }
     }
 }
