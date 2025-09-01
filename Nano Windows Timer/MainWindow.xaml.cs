@@ -13,28 +13,20 @@ namespace Nano_Windows_Timer
         {
             InitializeComponent();
         }
-        private void PlusTimerButton_Click(object sender, RoutedEventArgs e)
-        {
-        }
 
-        private void StartOrPauseButton_Click(object sender, RoutedEventArgs e)
+        private void StartButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void SecondsTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void PauseButton_Click(object sender, RoutedEventArgs e)
         {
-            PartOfTimer partOfTimer = new PartOfTimer(PartOfTimer.TimerPart.Seconds);
+
         }
 
-        private void MinutesTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            PartOfTimer partOfTimer = new PartOfTimer(PartOfTimer.TimerPart.Minutes);
-        }
 
-        private void HoursTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            PartOfTimer partOfTimer = new PartOfTimer(PartOfTimer.TimerPart.Hours);
         }
     }
 }

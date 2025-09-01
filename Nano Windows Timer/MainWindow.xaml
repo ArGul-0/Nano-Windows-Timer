@@ -31,22 +31,32 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="75"/>
         </Grid.RowDefinitions>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Nano Timer" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Margin="0,10,0,10"/>
-        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding TimeDisplay}" FontSize="48" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Nano Timer" FontSize="24" FontWeight="Bold" Foreground="WhiteSmoke" HorizontalAlignment="Center" Margin="0,10,0,10"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="48" FontWeight="Bold" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+        
+        
         <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
-            <Button Content="Start" Command="{Binding StartCommand}"
-                    Width="100" Height="40" Margin="5"/>
-            <Button Content="Pause" Command="{Binding PauseCommand}"
-                    Width="100" Height="40" Margin="5"/>
-            <Button Content="Reset" Command="{Binding ResetCommand}"
-                    Width="100" Height="40" Margin="5"/>
+            <Button Name ="StartButton" Content="Start" 
+                    Width="100" Height="40" Margin="5"
+                    Background="DimGray" Foreground="WhiteSmoke"
+                    Click="StartButton_Click"/>
+            <Button Name ="PauseButton" Content="Pause" 
+                    Width="100" Height="40" Margin="5"
+                    Background="DimGray" Foreground="WhiteSmoke"
+                    Click="PauseButton_Click"/>
+            <Button Name ="ResetButton" Content="Reset" 
+                    Width="100" Height="40" Margin="5"
+                    Background="DimGray" Foreground="WhiteSmoke"
+                    Click="ResetButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>
