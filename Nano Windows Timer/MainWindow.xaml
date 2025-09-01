@@ -28,23 +28,5 @@
     </Window.RenderTransform>
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="StartOrPauseButton" Grid.Column="1" Content="Play" HorizontalAlignment="Center" Margin="0,88,0,0" Grid.Row="1" VerticalAlignment="Top" Click="StartOrPauseButton_Click"/>
-        <Button x:Name="PlusTimerButton" Grid.Column="2" Content="+" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.362,0.107" Width="30" Height="30" Click="PlusTimerButton_Click"/>
-        <TextBox x:Name="MinutesTextBox" Grid.Column="1" HorizontalAlignment="Center" Margin="0,16,0,0" Grid.Row="1" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="23.9" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFC8C8C8" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" MaxLength="2" MaxLines="1" TextAlignment="Center" Height="24" TextChanged="MinutesTextBox_TextChanged"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="139,50,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <Label x:Name="Separator_1" Grid.Column="1" Content=":" HorizontalAlignment="Left" Margin="58,10,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="#FFC8C8C8" Background="{x:Null}" Height="30" FontSize="17"/>
-        <Label x:Name="Separator_2" Grid.Column="1" Content=":" HorizontalAlignment="Left" Margin="95,10,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="#FFC8C8C8" Background="{x:Null}" Height="30" FontSize="17"/>
-        <TextBox x:Name="HoursTextBox" HorizontalAlignment="Left" Margin="34,16,0,0" Grid.Row="1" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFC8C8C8" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" MaxLength="2" MaxLines="1" TextAlignment="Center" Height="24" Grid.Column="1" TextChanged="HoursTextBox_TextChanged"/>
-        <TextBox x:Name="SecondsTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="108,16,0,0" Grid.Row="1" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="24" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFC8C8C8" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" MaxLength="2" MaxLines="1" TextAlignment="Center" Height="24" TextChanged="SecondsTextBox_TextChanged"/>
     </Grid>
 </Window>
