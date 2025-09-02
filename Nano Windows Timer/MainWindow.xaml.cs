@@ -18,8 +18,6 @@ namespace Nano_Windows_Timer
         {
             InitializeComponent();
 
-            TimerTextBlock.Text = TimeSpan.FromSeconds(seconds).ToString(@"hh\:mm\:ss");
-
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
@@ -48,11 +46,10 @@ namespace Nano_Windows_Timer
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            if(isRunning)
-            {
-                isRunning = false;
-                timer.Stop();
-            }
+            isRunning = false;
+            seconds = 0;
+            TimerTextBlock.Text = "00:00:00";
+            timer.Stop();
         }
 
 
