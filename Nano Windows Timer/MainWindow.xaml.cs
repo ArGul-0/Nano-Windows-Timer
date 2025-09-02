@@ -10,6 +10,8 @@ namespace Nano_Windows_Timer
     /// </summary>
     public partial class MainWindow : Window
     {
+        TrayApp trayApp;
+
         public static bool isRunning = false;
 
         private DispatcherTimer timer;
@@ -18,7 +20,7 @@ namespace Nano_Windows_Timer
         {
             InitializeComponent();
 
-            TrayApp.Inizialize();
+            trayApp = new TrayApp();
 
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
@@ -65,7 +67,7 @@ namespace Nano_Windows_Timer
         private void MainTimerWindow_Closed(object sender, EventArgs e)
         {
             if(!isRunning)
-                Application.Current.Shutdown();
+                System.Windows.Application.Current.Shutdown();
 
 
         }
