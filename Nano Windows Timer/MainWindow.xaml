@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Nano_Windows_Timer"
         xmlns:Timers="clr-namespace:System.Timers;assembly=System.ComponentModel.TypeConverter" x:Name="MainTimerWindow" x:Class="Nano_Windows_Timer.MainWindow"
         mc:Ignorable="d"
-        Title="Timer" Height="450" Width="500" MinHeight="300" MinWidth="350" Foreground="{x:Null}" FontSize="16" RenderTransformOrigin="0.5,0.5" Background="#FF282828">
+        Title="Timer" Height="450" Width="500" MinHeight="300" MinWidth="350" Foreground="{x:Null}" FontSize="16" RenderTransformOrigin="0.5,0.5" Background="#FF282828" Closed="MainTimerWindow_Closed">
     <Window.LayoutTransform>
         <TransformGroup>
             <ScaleTransform/>

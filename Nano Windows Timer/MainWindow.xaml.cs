@@ -18,6 +18,8 @@ namespace Nano_Windows_Timer
         {
             InitializeComponent();
 
+            TrayApp.Inizialize();
+
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
@@ -58,6 +60,14 @@ namespace Nano_Windows_Timer
         {
             seconds++;
             TimerTextBlock.Text = TimeSpan.FromSeconds(seconds).ToString(@"hh\:mm\:ss");
+        }
+
+        private void MainTimerWindow_Closed(object sender, EventArgs e)
+        {
+            if(!isRunning)
+                Application.Current.Shutdown();
+
+
         }
     }
 }
