@@ -1,6 +1,7 @@
-﻿using System.Windows;
+﻿using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
-using System.Linq;
+using System.Windows.Forms;
 using System.Windows.Threading;
 
 namespace Nano_Windows_Timer
@@ -10,8 +11,6 @@ namespace Nano_Windows_Timer
     /// </summary>
     public partial class MainWindow : Window
     {
-        TrayApp trayApp;
-
         public static bool isRunning = false;
 
         private DispatcherTimer timer;
@@ -19,8 +18,6 @@ namespace Nano_Windows_Timer
         public MainWindow()
         {
             InitializeComponent();
-
-            trayApp = new TrayApp();
 
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
@@ -62,14 +59,6 @@ namespace Nano_Windows_Timer
         {
             seconds++;
             TimerTextBlock.Text = TimeSpan.FromSeconds(seconds).ToString(@"hh\:mm\:ss");
-        }
-
-        private void MainTimerWindow_Closed(object sender, EventArgs e)
-        {
-            if(!isRunning)
-                System.Windows.Application.Current.Shutdown();
-
-
         }
     }
 }
