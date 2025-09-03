@@ -8,6 +8,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
 	<UseWindowsForms>true</UseWindowsForms>
+	<ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+
+	<PublishSingleFile>true</PublishSingleFile>
+	<SelfContained>true</SelfContained>
+
+	  <Win32Icon>Resources\Icon.ico</Win32Icon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icon.ico" />
+  </ItemGroup>
 
 </Project>
